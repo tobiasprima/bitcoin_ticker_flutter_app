@@ -1,16 +1,5 @@
 # bitcoin_ticker_flutter_app
 
-A new Flutter project.
+A Bitcoin Ticker App from Udemy Course The Complete 2021 Flutter Development Bootcamp with Dart by Dr. Angela Yu.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![bitcoin-flutter-demo](https://user-images.githubusercontent.com/88434271/183381509-3369d250-dc27-46eb-a14b-a2489e9f8d87.gif)
