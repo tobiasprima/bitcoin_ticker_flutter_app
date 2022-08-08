@@ -28,6 +28,7 @@ class _PriceScreenState extends State<PriceScreen> {
       onChanged: (value) {
         setState(() {
           selectedCurrency = value!;
+          getData();
         });
       },
     );
@@ -44,9 +45,26 @@ class _PriceScreenState extends State<PriceScreen> {
       itemExtent: 32.0,
       onSelectedItemChanged: (selectedIndex) {
         print(selectedIndex);
+        setState(() {
+          selectedCurrency = currenciesList[selectedIndex];
+          getData();
+        });
       },
       children: pickerItems,
     );
+  }
+
+  String bitcoinValue = '?';
+
+  void getData() async {
+    try {
+      var data = await CoinData().getCoinData(selectedCurrency);
+      setState(() {
+        bitcoinValue = data;
+      });
+    } catch (e) {
+      print(e);
+    }
   }
 
   // Widget? getPicker() {
